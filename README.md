@@ -1,24 +1,20 @@
-# loquere-legal
+# gh-universal-legal
 
-Öffentliches Hosting der rechtlichen Dokumente zur App **Loquere!** (G+H universal GmbH).
+Öffentliches Hosting der rechtlichen Dokumente der **G+H universal GmbH** via GitHub Pages.
+Hier liegen Dokumente, die öffentlich abrufbar sein müssen (Datenschutzerklärungen, später
+z.&nbsp;B. AGB, Auftragsdatenbearbeitungsverträge).
 
-- `index.html` — Landing-Page (GitHub Pages), verlinkt die Datenschutzerklärung.
-- `datenschutz-loquere.pdf` — die Datenschutzerklärung (PDF). *(Wird von G+H bereitgestellt.)*
+- `index.html` — Landing-Page mit Verzeichnis aller Dokumente.
+- `loquere-datenschutz.pdf` — Datenschutzerklärung der App Loquere! *(von G+H bereitgestellt)*.
 
 ## Feste Links (GitHub Pages)
 
-- Landing-Page: `https://ghuniversaldev.github.io/loquere-legal/`
-- Datenschutzerklärung (PDF): `https://ghuniversaldev.github.io/loquere-legal/datenschutz-loquere.pdf`
+- Verzeichnis: `https://ghuniversaldev.github.io/gh-universal-legal/`
+- Loquere Datenschutzerklärung (PDF): `https://ghuniversaldev.github.io/gh-universal-legal/loquere-datenschutz.pdf`
 
 Der PDF-Link ist der stabile Verweis für den Google-Play-Store-Eintrag.
 
-## Aktualisieren
+## Neues Dokument ablegen
 
-PDF ersetzen und committen — der Link bleibt gleich:
-
-```bash
-# datenschutz-loquere.pdf ins Repo legen
-git add datenschutz-loquere.pdf
-git commit -m "Datenschutzerklärung aktualisiert"
-git push
-```
+Datei mit sprechendem Namen (`<produkt>-<art>.pdf`, z.&nbsp;B. `loquere-agb.pdf`) ins Repo
+legen, in `index.html` verlinken, committen und pushen. Der jeweilige Link bleibt stabil.
