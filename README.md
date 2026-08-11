@@ -5,12 +5,12 @@ Hier liegen Dokumente, die öffentlich abrufbar sein müssen (Datenschutzerklär
 z.&nbsp;B. AGB, Auftragsdatenbearbeitungsverträge).
 
 - `index.html` — Landing-Page mit Verzeichnis aller Dokumente.
-- `loquere-datenschutz.pdf` — Datenschutzerklärung der App Loquere! *(von G+H bereitgestellt)*.
+- `datenschutz_gh-universal.pdf` — Datenschutzerklärung der G+H universal GmbH (gilt auch für die App Loquere!) *(von G+H bereitgestellt)*.
 
 ## Feste Links (GitHub Pages)
 
 - Verzeichnis: `https://ghuniversaldev.github.io/gh-universal-legal/`
-- Loquere Datenschutzerklärung (PDF): `https://ghuniversaldev.github.io/gh-universal-legal/loquere-datenschutz.pdf`
+- Datenschutzerklärung (PDF): `https://ghuniversaldev.github.io/gh-universal-legal/datenschutz_gh-universal.pdf`
 
 Der PDF-Link ist der stabile Verweis für den Google-Play-Store-Eintrag.
 
