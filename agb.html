@@ -6,68 +6,49 @@
 <title>Allgemeine Geschäftsbedingungen | G+H universal GmbH</title>
 <meta name="description" content="Allgemeine Geschäftsbedingungen der G+H universal GmbH für Beratungs- und Dienstleistungen.">
 <style>
-:root{
-  --bordeaux:#68131A; --bordeaux-tief:#4A0D12; --bordeaux-tint:#F8EEEE;
-  --navy:#042045; --navy-mid:#2A4068; --navy-pale:#C5CCD9; --navy-tint:#EEF0F5;
-  --text:#1F242C; --grau:#4A5260; --linie:#D7DBE2; --bg:#FFFFFF; --flaeche:#EFF1F4;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --bordeaux:#D99AA0; --bordeaux-tief:#E5C9CB; --bordeaux-tint:#241417;
-    --navy:#C5CCD9; --navy-mid:#A8B4C8; --navy-pale:#2A4068; --navy-tint:#161A21;
-    --text:#E3E6EB; --grau:#9AA3B0; --linie:#2A3038; --bg:#0F1115; --flaeche:#161A21;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0; background:var(--bg); color:var(--text);
-  font-family:Aptos,Inter,"Segoe UI",Arial,sans-serif;
-  font-size:17px; line-height:1.6;
-}
-.wrap{max-width:46rem; margin:0 auto; padding:2.5rem 1.25rem 4rem}
-header{border-bottom:2px solid var(--bordeaux); padding-bottom:1.5rem; margin-bottom:2rem}
-.wortmarke{font-weight:700; font-size:1.5rem; letter-spacing:.02em; color:var(--bordeaux); margin:0 0 1.75rem}
-.wortmarke span{color:var(--navy); font-weight:400; font-size:.95rem; letter-spacing:0; display:block; margin-top:.2rem}
-h1{font-size:1.9rem; line-height:1.25; color:var(--bordeaux); margin:0 0 .5rem; font-weight:700}
-.lead{color:var(--navy-mid); font-size:1.05rem; margin:0 0 .75rem}
-.stand{color:var(--grau); font-size:.85rem; margin:0}
-nav{background:var(--navy-tint); border:1px solid var(--linie); padding:1rem 1.25rem; margin:0 0 2.5rem}
-nav p{margin:0 0 .5rem; font-weight:700; color:var(--navy); font-size:.95rem}
-nav ol{margin:0; padding-left:1.1rem; font-size:.95rem}
-nav li{margin:.2rem 0}
-nav a{color:var(--navy-mid)}
-h2{
-  font-size:1.25rem; color:var(--bordeaux); font-weight:700;
-  margin:3rem 0 1.25rem; padding-top:1.25rem; border-top:1px solid var(--linie);
-}
-h3{font-size:1.05rem; color:var(--navy); font-weight:700; margin:2rem 0 .6rem}
-p{margin:0 0 .8rem}
-a{color:var(--bordeaux); text-underline-offset:2px}
-.ziffer{display:block}
-ol.buchstaben,ol.rang{margin:.2rem 0 .8rem; padding-left:1.4rem}
-ol.buchstaben{list-style:lower-alpha}
-ol.rang{list-style:decimal}
-ol.buchstaben li,ol.rang li{margin:.25rem 0}
-footer{
-  margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--linie);
-  color:var(--grau); font-size:.85rem;
-}
-footer p{margin:0 0 .35rem}
-@media print{
-  body{font-size:11pt; background:#fff; color:#000}
-  nav{display:none}
-  h2{page-break-before:always; border-top:0}
-  h2:first-of-type{page-break-before:avoid}
-  h3,p{page-break-inside:avoid}
-}
-</style>
+    :root { --bordeaux:#7A1F2C; --navy:#1C3A5C; --ink:#1f1f1f; --muted:#666; --line:#e3dcda; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Georgia,"Times New Roman",serif; color:var(--ink);
+           background:#faf8f7; line-height:1.62; }
+    .wrap { max-width:760px; margin:0 auto; padding:44px 24px 72px; }
+    .wortmarke { color:var(--bordeaux); font-weight:bold; letter-spacing:1px; font-size:13px;
+                 text-transform:uppercase; font-family:Arial,sans-serif; margin:0; }
+    .wortmarke span { display:inline; letter-spacing:1px; }
+    h1 { font-size:30px; margin:8px 0 2px; color:var(--navy); }
+    h2 { font-size:19px; margin:34px 0 8px; color:var(--navy);
+         border-bottom:2px solid var(--line); padding-bottom:5px; }
+    h3 { font-size:16px; margin:22px 0 6px; color:var(--bordeaux); font-family:Arial,sans-serif; }
+    p { margin:12px 0; }
+    .ziffer { display:block; }
+    ul, ol { margin:12px 0; padding-left:22px; }
+    li { margin:6px 0; }
+    ol.buchstaben { list-style:lower-alpha; }
+    ol.rang { list-style:decimal; }
+    a { color:var(--bordeaux); word-break:break-word; }
+    header { border-bottom:3px solid var(--bordeaux); padding-bottom:16px; margin-bottom:20px; }
+    .lead { color:var(--muted); font-size:14px; font-family:Arial,sans-serif; margin:6px 0 0; }
+    .stand { color:var(--muted); font-size:14px; font-family:Arial,sans-serif; margin:2px 0 0; }
+    .backlink { font-family:Arial,sans-serif; font-size:14px; margin-bottom:22px; }
+    footer { margin-top:44px; padding-top:16px; border-top:1px solid var(--line);
+             color:var(--muted); font-size:12.5px; font-family:Arial,sans-serif; }
+    footer p { margin:0 0 4px; }
+    @media print {
+      body { background:#fff; font-size:11pt; }
+      .backlink { display:none; }
+      h2 { page-break-before:always; }
+      h2:first-of-type { page-break-before:avoid; }
+      h3, p { page-break-inside:avoid; }
+    }
+  </style>
 </head>
 <body>
 <div class="wrap">
 
+<div class="backlink"><a href="./">&larr; Rechtliche Dokumente</a> &nbsp;·&nbsp;
+  <a href="agb_gh-universal.pdf">Gleiche Fassung als PDF</a></div>
+
 <header>
-  <p class="wortmarke">G+H<span>universal GmbH</span></p>
+  <p class="wortmarke">G+H <span>universal GmbH</span></p>
   <h1>Allgemeine Geschäftsbedingungen</h1>
   <p class="lead">Beratungs- und Dienstleistungen</p>
   <p class="stand">Fassung V1.0</p>
