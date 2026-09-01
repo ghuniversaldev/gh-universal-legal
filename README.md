@@ -5,14 +5,26 @@ Hier liegen Dokumente, die öffentlich abrufbar sein müssen (Datenschutzerklär
 z.&nbsp;B. AGB, Auftragsdatenbearbeitungsverträge).
 
 - `index.html` — Landing-Page mit Verzeichnis aller Dokumente.
-- `datenschutz_gh-universal.pdf` — Datenschutzerklärung der G+H universal GmbH (gilt auch für die App Loquere!) *(von G+H bereitgestellt)*.
+- `datenschutz.html` — Datenschutzerklärung der G+H universal GmbH, **massgebliche Fassung**,
+  inklusive Anhang A für die App Loquere!.
+- `datenschutz_gh-universal.pdf` — derselbe Text als herunterladbare Kopie.
 
 ## Feste Links (GitHub Pages)
 
 - Verzeichnis: `https://ghuniversaldev.github.io/gh-universal-legal/`
-- Datenschutzerklärung (PDF): `https://ghuniversaldev.github.io/gh-universal-legal/datenschutz_gh-universal.pdf`
+- Datenschutzerklärung (HTML): `https://ghuniversaldev.github.io/gh-universal-legal/datenschutz.html`
+- Dieselbe Fassung als PDF: `https://ghuniversaldev.github.io/gh-universal-legal/datenschutz_gh-universal.pdf`
 
-Der PDF-Link ist der stabile Verweis für den Google-Play-Store-Eintrag.
+**Der HTML-Link ist der Verweis, der im Google-Play-Store-Eintrag hinterlegt ist**, nicht
+das PDF. Im Store-Eintrag von Loquere! nachgeprüft am 28.08.2026.
+
+## Woher der Inhalt kommt
+
+Geändert wird **immer zuerst** in der Unternehmensablage (OneDrive,
+`01 - Unternehmen/20-QM/Datenschutz/`): `datenschutz_gh-universal.docm` als
+Quelldokument, daraus Webtext und PDF. Erst danach wird hierher repliziert. Nie
+umgekehrt, und nie nur eines von beiden: Die Seite verweist auf das PDF als «gleiche
+Fassung», das muss stimmen.
 
 ## Neues Dokument ablegen
 
