@@ -11,7 +11,11 @@
     body { margin:0; font-family:Georgia,"Times New Roman",serif; color:var(--ink);
            background:#faf8f7; line-height:1.55; }
     .wrap { max-width:720px; margin:0 auto; padding:48px 24px 64px; }
-    header { border-bottom:3px solid var(--bordeaux); padding-bottom:18px; margin-bottom:28px; }
+    header { border-bottom:3px solid var(--bordeaux); padding-bottom:18px; margin-bottom:28px;
+             display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
+    header .titel { min-width:0; }
+    .logo { width:100px; height:auto; flex:none; margin-top:2px; }
+    @media (max-width:520px) { .logo { width:76px; } }
     .brand { color:var(--bordeaux); font-weight:bold; letter-spacing:1px; font-size:13px;
              text-transform:uppercase; font-family:Arial,sans-serif; }
     h1 { font-size:28px; margin:8px 0 0; color:var(--navy); }
@@ -35,8 +39,12 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">G+H universal GmbH</div>
-      <h1>Rechtliche Dokumente</h1>
+      <div class="titel">
+        <div class="brand">G+H universal GmbH</div>
+        <h1>Rechtliche Dokumente</h1>
+      </div>
+      <img class="logo" src="gh-logo.png" width="300" height="140"
+           alt="G+H universal GmbH">
     </header>
 
     <p>Öffentlich abrufbare rechtliche Dokumente der G+H universal GmbH.</p>
