@@ -39,7 +39,7 @@
     <div class="backlink"><a href="./">&larr; Rechtliche Dokumente</a> &nbsp;·&nbsp;
       <a href="datenschutz_gh-universal.pdf">Gleiche Fassung als PDF</a></div>
     <h1>Datenschutzerklärung</h1>
-<p class="stand">Stand: 28.8.2026 · Massgeblich ist diese veröffentlichte Webfassung. Das PDF enthält denselben Text als herunterladbare Kopie, einschliesslich Anhang A.</p>
+<p class="stand">Stand: 4.11.2026 | Massgeblich ist diese veröffentlichte Webfassung. Das PDF enthält denselben Text als herunterladbare Kopie, einschliesslich Anhang A.</p>
 <h2>1 Verantwortliche Stelle</h2>
 <p>Verantwortlich für die Bearbeitung von Personendaten im Sinne des Schweizer Datenschutzgesetzes (DSG) ist:</p>
 <p>G + H universal GmbH<br>
@@ -111,11 +111,11 @@ E-Mail: <a href="mailto:info@gh-universal.ch">info@gh-universal.ch</a></p>
 <p>Wir können diese Datenschutzerklärung jederzeit anpassen, um sie an geänderte Rechtslagen oder an Anpassungen unserer Bearbeitung anzugleichen. Es gilt jeweils die auf unserer GitHub Seite <a href="https://ghuniversaldev.github.io/gh-universal-legal/datenschutz.html">https://ghuniversaldev.github.io/gh-universal-legal/datenschutz.html</a> veröffentlichte aktuelle Fassung.</p>
 
 <div class="anhang" id="loquere">
-<h1>Anhang A — Loquere! (Android-App)</h1>
-<p class="stand">Produktspezifische Ergänzung zu Ziffer 6 · App-Paket <code>ch.ghuniversal.diktat</code> · Stand: 28.8.2026</p>
+<h1>Anhang A: Loquere! (Android-App)</h1>
+<p class="stand">Produktspezifische Ergänzung zu Ziffer 6 | App-Paket <code>ch.ghuniversal.diktat</code> | Stand: 4.11.2026</p>
 
 <h2>A.1 Was die App tut</h2>
-<p>Loquere! ist eine Sprachnotiz-App. Sie nimmt ein Diktat auf, lässt es in Text umwandeln und legt das Ergebnis als Markdown-Datei im persönlichen Cloud-Speicher der Nutzerin bzw. des Nutzers ab. Anbieter der App ist die G + H universal GmbH (Anschrift und Kontakt siehe Ziffer 1).</p>
+<p>Loquere! ist eine Sprachnotiz-App. Sie nimmt ein Diktat auf, lässt es in Text umwandeln und legt das Ergebnis als Markdown-Datei im persönlichen Cloud-Speicher der Nutzerin bzw. des Nutzers ab, bei Microsoft OneDrive oder Infomaniak kDrive. Anbieter der App ist die G + H universal GmbH (Anschrift und Kontakt siehe Ziffer 1).</p>
 
 <h2>A.2 Grundsatz: keine Daten an uns</h2>
 <p>Die App ist werbefrei und enthält kein Tracking, keine Werbe-IDs und keine Analyse- oder Absturzberichts-Werkzeuge. Es wird kein Konto bei der G + H universal GmbH angelegt, und es werden keine Nutzungs-, Inhalts- oder Kontaktdaten an uns übermittelt. Wir betreiben für die App keinen eigenen Server und haben keinen Zugriff auf Aufnahmen, Notizen, Fotos oder Zugangsdaten.</p>
@@ -124,50 +124,57 @@ E-Mail: <a href="mailto:info@gh-universal.ch">info@gh-universal.ch</a></p>
 
 <h2>A.3 Welche Daten die App bearbeitet</h2>
 <ul>
-  <li><strong>Audioaufnahmen.</strong> Beim Diktieren entsteht eine Tonaufnahme, die temporär auf dem Gerät gespeichert und zur Umwandlung in Text an den von der Nutzerin bzw. dem Nutzer konfigurierten Transkriptionsdienst gesendet wird. Nach erfolgreichem Upload der fertigen Notiz wird die Audiodatei auf dem Gerät gelöscht.</li>
-  <li><strong>Nicht zugestellte Aufnahmen.</strong> Lässt sich eine Notiz nicht zustellen (kein Netz, abgelaufene Anmeldung, Störung beim gewählten Dienst), bleibt die Aufnahme auf dem Gerät liegen, damit sie nicht verloren geht, und kann später erneut gesendet werden. Sie liegt in einem app-eigenen Bereich, auf den andere Apps keinen Zugriff haben, und verlässt das Gerät nur auf demselben Weg wie jede andere Aufnahme. Zu den Fristen siehe A.6. Wer das nicht möchte, schaltet die Zwischenspeicherung in den Einstellungen ab.</li>
-  <li><strong>Stop-and-Go-Sitzungen.</strong> In dieser Betriebsart entsteht pro diktiertem Abschnitt eine eigene Aufnahme. Alle Abschnitte einer Sitzung liegen auf dem Gerät, bis die Sitzung abgeschlossen und die fertige Notiz zugestellt ist.</li>
-  <li><strong>Aktivitätsprotokoll.</strong> Die App führt auf dem Gerät ein Protokoll der letzten 500 Diktate mit Zeitpunkt, Dauer, Ziel, verwendetem Modell und Ergebnis. Es enthält keine Transkripte und keine Notizinhalte. Es dient Ihrer eigenen Nachvollziehbarkeit, bleibt auf dem Gerät und lässt sich in den Einstellungen leeren oder in Ihren eigenen Cloud-Speicher schreiben.</li>
-  <li><strong>Transkript und Notizinhalt.</strong> Der erzeugte Text wird als Markdown-Datei in den Microsoft OneDrive der Nutzerin bzw. des Nutzers geschrieben (über Microsoft Graph). Der Inhalt verbleibt in deren bzw. dessen eigenem Cloud-Speicher.</li>
-  <li><strong>Fotos.</strong> Bei der Funktion «Foto-Notiz» werden ausgewählte oder aufgenommene Bilder unverändert in denselben OneDrive hochgeladen und in der Notiz referenziert.</li>
-  <li><strong>Microsoft-Kontoanmeldung.</strong> Für den Zugriff auf OneDrive meldet sich die Nutzerin bzw. der Nutzer über Microsoft an (MSAL). Die App erhält ein Zugriffstoken sowie die Kontokennung (in der Regel die E-Mail-Adresse) zur Anzeige des angemeldeten Kontos. Die Anmeldedaten selbst werden ausschliesslich von Microsoft verarbeitet; die App sieht kein Passwort.</li>
-  <li><strong>API-Schlüssel.</strong> Der für den Transkriptions- bzw. Sprachmodell-Dienst nötige Schlüssel wird verschlüsselt auf dem Gerät gespeichert (Android Keystore, AES-GCM) und ausschliesslich an den zugehörigen Dienst gesendet. Er verlässt das Gerät zu keinem anderen Zweck.</li>
-  <li><strong>Einstellungen.</strong> Ausgewählter Anbieter, Modell und Ablagepfad werden lokal auf dem Gerät gespeichert.</li>
+  <li><strong>Audioaufnahmen:</strong> Beim Diktieren entsteht eine Tonaufnahme. Sie wird mit dem Ende der Aufnahme in einem app-eigenen Bereich des Geräts gespeichert und zur Umwandlung in Text an den von der Nutzerin bzw. dem Nutzer konfigurierten Transkriptionsdienst gesendet. Nach erfolgreichem Upload der fertigen Notiz wird die Audiodatei auf dem Gerät gelöscht.</li>
+  <li><strong>Nicht zugestellte Aufnahmen:</strong> Lässt sich eine Notiz nicht zustellen (kein Netz, abgelaufene Anmeldung, Störung beim gewählten Dienst), bleibt die Aufnahme auf dem Gerät liegen, damit sie nicht verloren geht, und kann später erneut gesendet werden. Sie liegt in einem app-eigenen Bereich, auf den andere Apps keinen Zugriff haben, und verlässt das Gerät nur auf demselben Weg wie jede andere Aufnahme. Zu den Fristen siehe A.6. Wer das nicht möchte, schaltet die Zwischenspeicherung in den Einstellungen ab.</li>
+  <li><strong>Stop-and-Go-Sitzungen:</strong> In dieser Betriebsart entsteht pro diktiertem Abschnitt eine eigene Aufnahme. Alle Abschnitte einer Sitzung liegen auf dem Gerät, bis die Sitzung abgeschlossen und die fertige Notiz zugestellt ist.</li>
+  <li><strong>Ton sichern:</strong> Solange Aufnahmen oder eine Stop-and-Go-Sitzung noch nicht zugestellt sind, kann die Nutzerin bzw. der Nutzer sie mit «Ton sichern» als Tondateien in einen selbst gewählten Ordner kopieren; bei einer Sitzung wird der bereits erkannte Text als Markdown-Datei mitgesichert. Den Ordner wählt die Nutzerin bzw. der Nutzer im Auswahldialog des Systems; er kann auf dem Gerät liegen oder bei einem Cloud-Anbieter, den das System anbietet. Die Kopien unterliegen danach allein der Kontrolle der Nutzerin bzw. des Nutzers. Ohne diese ausdrückliche Handlung legt die App keine Aufnahmen ausserhalb ihres eigenen Bereichs auf dem Gerät ab.</li>
+  <li><strong>Aktivitätsprotokoll:</strong> Die App führt auf dem Gerät ein Protokoll der letzten 500 Diktate mit Zeitpunkt, Dauer, Lasche, Ziel und Dateiname der Notiz, verwendetem Modell und Ergebnis. Der Dateiname kann einen kurzen, aus dem Diktat abgeleiteten Titel enthalten; Transkripte und Notizinhalte enthält das Protokoll nicht. Es dient Ihrer eigenen Nachvollziehbarkeit, bleibt auf dem Gerät (zur Gerätesicherung siehe unten) und lässt sich in den Einstellungen leeren oder in Ihren eigenen Cloud-Speicher schreiben.</li>
+  <li><strong>Transkript und Notizinhalt:</strong> Der erzeugte Text wird als Markdown-Datei im Speicherkonto abgelegt, das die Nutzerin bzw. der Nutzer für die jeweilige Lasche der App gewählt hat: Microsoft OneDrive (über Microsoft Graph) oder Infomaniak kDrive (Rechenzentren in der Schweiz). Jede Lasche kann ein eigenes Konto haben, auch bei verschiedenen Anbietern. Der Inhalt verbleibt im eigenen Cloud-Speicher der Nutzerin bzw. des Nutzers.</li>
+  <li><strong>Angaben in jeder Notiz:</strong> Jede Notiz enthält im Kopf die Anmelde-Adresse des Speicherkontos oder die Adresse, welche die Nutzerin bzw. der Nutzer für dieses Konto selbst eingetragen hat (Feld «erfasst-von»), den Zeitpunkt der Aufnahme mit Zeitzone, den Namen der Lasche, eine zufällig erzeugte Kennung der Aufnahme, die App-Version und die Namen der verwendeten KI-Modelle. Diese Angaben liegen wie die Notiz selbst im Speicher der Nutzerin bzw. des Nutzers.</li>
+  <li><strong>Fotos:</strong> Bei der Funktion «Foto-Notiz» werden ausgewählte oder aufgenommene Bilder unverändert in dasselbe Speicherkonto hochgeladen und in der Notiz referenziert. Bis zur Zustellung liegen sie zusammen mit der Aufnahme im app-eigenen Bereich des Geräts.</li>
+  <li><strong>Anmeldung bei Microsoft:</strong> Für den Zugriff auf OneDrive meldet sich die Nutzerin bzw. der Nutzer über Microsoft an (MSAL); mehrere Microsoft-Konten sind möglich. Die App erhält je Konto ein Zugriffstoken sowie die Kontokennung (in der Regel die E-Mail-Adresse) zur Anzeige des angemeldeten Kontos. Die Anmeldedaten selbst werden ausschliesslich von Microsoft verarbeitet; die App sieht kein Passwort.</li>
+  <li><strong>Zugang zu kDrive:</strong> Für Infomaniak kDrive trägt die Nutzerin bzw. der Nutzer ein selbst im Infomaniak Manager erzeugtes API-Token ein. Es wird verschlüsselt auf dem Gerät gespeichert (Android Keystore, AES-GCM) und ausschliesslich an Infomaniak gesendet. Die App liest damit das Profil, um die Anmelde-Adresse für das Feld «erfasst-von» zu bestimmen, und die Liste der Laufwerke.</li>
+  <li><strong>API-Schlüssel:</strong> Der für den Transkriptions- bzw. Sprachmodell-Dienst nötige Schlüssel wird verschlüsselt auf dem Gerät gespeichert (Android Keystore, AES-GCM) und ausschliesslich an den zugehörigen Dienst gesendet. Er verlässt das Gerät zu keinem anderen Zweck.</li>
+  <li><strong>Einstellungen:</strong> Ausgewählte Anbieter und Modelle, Laschen, Ordnerpfade, Kacheln mit ihren Vorlagen sowie je Speicherkonto der Anbieter, die angezeigte Kontoadresse und die selbst eingetragene Adresse für die Notizen werden lokal auf dem Gerät gespeichert.</li>
+  <li><strong>Gerätesicherung:</strong> Ist die Sicherung des Geräts eingeschaltet (Android-Sicherung im Google-Konto, Übertragung auf ein neues Gerät), nimmt sie die Einstellungen der App und das Aktivitätsprotokoll mit. Ausgeschlossen sind nicht zugestellte Aufnahmen und Fotos, Stop-and-Go-Sitzungen, API-Schlüssel, kDrive-Tokens und die Anmeldedaten bei Microsoft. Die Sicherung ist eine Funktion von Android; ob sie läuft, legt die Nutzerin bzw. der Nutzer in den Einstellungen des Geräts fest.</li>
+  <li><strong>Verbindungstests:</strong> «Speicherort prüfen» legt im gewählten Speicher eine kleine Testdatei im Ordner «_Loquere» ab. Der Verbindungstest der KI-Dienste sendet eine halbe Sekunde Stille an den Transkriptionsdienst und eine Kleinstanfrage an den Dienst der Nachbearbeitung; Inhalte aus Notizen gehen dabei nicht mit.</li>
 </ul>
 
 <h2>A.4 Weitergabe an Dritte</h2>
 <p>Die App übermittelt Daten ausschliesslich an die Dienste, welche die Nutzerin bzw. der Nutzer selbst konfiguriert hat:</p>
 <ul>
-  <li><strong>Transkriptions- bzw. KI-Anbieter</strong> — erhält die Audioaufnahme zur Umwandlung in Text und, bei Nutzung der Nachbearbeitung, den Text. Zur Auswahl stehen unter anderem Mistral (EU, Voreinstellung), Groq (US), OpenAI (US), Anthropic (US, nur Nachbearbeitung) sowie ein eigener, OpenAI-kompatibler Endpunkt. Es gelten die Datenschutzbestimmungen des jeweils gewählten Anbieters; bei US-Anbietern erfolgt damit eine Bekanntgabe ins Ausland.</li>
-  <li><strong>Microsoft</strong> (OneDrive / Graph) — erhält die Anmeldung sowie die erzeugten Dateien zur Ablage. Es gelten die Datenschutzbestimmungen von Microsoft.</li>
+  <li><strong>Transkriptions- bzw. KI-Anbieter:</strong> erhält die Audioaufnahme zur Umwandlung in Text. Ist ein Dienst für die Nachbearbeitung eingetragen, erhält dieser den Text zur Nachbearbeitung und, solange die Einstellung «Sprechende Dateinamen» eingeschaltet ist (Voreinstellung), zur Bildung eines kurzen Titels für den Dateinamen. Zur Auswahl stehen unter anderem Mistral (EU, Voreinstellung), Groq (US), OpenAI (US), Anthropic (US, nur Nachbearbeitung) sowie ein eigener, OpenAI-kompatibler Endpunkt. Es gelten die Datenschutzbestimmungen des jeweils gewählten Anbieters; bei US-Anbietern erfolgt damit eine Bekanntgabe ins Ausland.</li>
+  <li><strong>Microsoft (OneDrive / Graph):</strong> erhält bei Wahl von OneDrive die Anmeldung sowie die erzeugten Dateien zur Ablage. Es gelten die Datenschutzbestimmungen von Microsoft.</li>
+  <li><strong>Infomaniak (kDrive):</strong> erhält bei Wahl von kDrive das API-Token zur Anmeldung sowie die erzeugten Dateien zur Ablage. Es gelten die Datenschutzbestimmungen von Infomaniak.</li>
 </ul>
 <p>Eine Weitergabe an die G + H universal GmbH oder an sonstige Dritte findet nicht statt. Es werden keine Daten verkauft und keine Daten zu Werbe- oder Analysezwecken weitergegeben.</p>
 
 <h2>A.5 Berechtigungen</h2>
 <ul>
-  <li><strong>Mikrofon</strong> (<code>RECORD_AUDIO</code>) — für die Sprachaufnahme.</li>
-  <li><strong>Internet / Netzwerkstatus</strong> — für die Übermittlung an den gewählten Dienst und an OneDrive.</li>
-  <li><strong>Vordergrunddienst mit Mikrofonnutzung</strong> (<code>FOREGROUND_SERVICE_MICROPHONE</code>) — damit eine laufende Aufnahme nicht abbricht, wenn der Bildschirm ausgeht oder die App in den Hintergrund wechselt. Eine laufende Aufnahme ist dabei stets an einer Benachrichtigung erkennbar.</li>
-  <li><strong>Benachrichtigungen</strong> (<code>POST_NOTIFICATIONS</code>) — zur Anzeige dieser Aufnahme-Benachrichtigung und, während einer Stop-and-Go-Sitzung, zur Steuerung der Sitzung aus dem Benachrichtigungsmenü heraus.</li>
+  <li><strong>Mikrofon</strong> (<code>RECORD_AUDIO</code>): für die Sprachaufnahme.</li>
+  <li><strong>Internet und Netzwerkstatus:</strong> für die Übermittlung an den gewählten Dienst und an das gewählte Speicherkonto.</li>
+  <li><strong>Vordergrunddienst mit Mikrofonnutzung</strong> (<code>FOREGROUND_SERVICE_MICROPHONE</code>): damit eine laufende Aufnahme nicht abbricht, wenn der Bildschirm ausgeht oder die App in den Hintergrund wechselt. Eine laufende Aufnahme ist dabei stets an einer Benachrichtigung erkennbar.</li>
+  <li><strong>Benachrichtigungen</strong> (<code>POST_NOTIFICATIONS</code>): zur Anzeige dieser Aufnahme-Benachrichtigung und, während einer Stop-and-Go-Sitzung, zur Steuerung der Sitzung aus dem Benachrichtigungsmenü heraus.</li>
 </ul>
-<p>Für Fotos nutzt die App die System-Kamera-App bzw. den System-Auswahldialog; eine eigene Kamera- oder Speicherberechtigung ist dafür nicht erforderlich.</p>
+<p>Für Fotos nutzt die App die System-Kamera-App bzw. den System-Auswahldialog, für «Ton sichern» die Ordnerwahl des Systems; eine eigene Kamera- oder Speicherberechtigung ist dafür nicht erforderlich.</p>
 
 <h2>A.6 Aufbewahrung und Löschung</h2>
 <p>Audioaufnahmen werden nach erfolgreichem Upload der Notiz vom Gerät gelöscht.</p>
 <p>Nicht zugestellte Aufnahmen bleiben bis zu einer in den Einstellungen wählbaren Frist auf dem Gerät (Voreinstellung fünf Tage, höchstens 30 Tage) und werden danach in jedem Fall automatisch gelöscht. Von Hand verwerfen lassen sie sich jederzeit.</p>
 <p>Davon ausgenommen ist eine nicht zugestellte Stop-and-Go-Sitzung: Sie bleibt mit allen ihren Abschnitten auf dem Gerät, bis sie zugestellt oder von Hand verworfen wird. Eine Frist läuft dafür bewusst nicht ab, weil eine Sitzung über Stunden hinweg entstehen kann und ihr Verlust schwerer wöge als die längere Vorhaltung.</p>
 <p>Das Aktivitätsprotokoll umfasst höchstens 500 Einträge; ältere fallen automatisch weg. Es lässt sich in den Einstellungen jederzeit leeren.</p>
-<p>Notizen und Fotos liegen im Cloud-Speicher der Nutzerin bzw. des Nutzers und unterliegen vollständig deren bzw. dessen Kontrolle; sie können dort jederzeit gelöscht werden. Der API-Schlüssel und die Einstellungen bleiben auf dem Gerät, bis sie in der App entfernt werden oder die App deinstalliert wird. Mit der Deinstallation werden alle lokalen App-Daten entfernt.</p>
+<p>Notizen und Fotos liegen im Cloud-Speicher der Nutzerin bzw. des Nutzers und unterliegen vollständig deren bzw. dessen Kontrolle; sie können dort jederzeit gelöscht werden. Dasselbe gilt für Kopien, die mit «Ton sichern» in einen selbst gewählten Ordner gelegt wurden, und für die Dateien im Ordner «_Loquere» (Testdateien, exportiertes Aktivitätsprotokoll). API-Schlüssel, kDrive-Tokens und Einstellungen bleiben auf dem Gerät, bis sie in der App entfernt werden oder die App deinstalliert wird; ein kDrive-Token wird ausserdem gelöscht, sobald das Konto in der App abgemeldet wird. Mit der Deinstallation werden alle lokalen App-Daten entfernt.</p>
+<p>Eine Gerätesicherung im Google-Konto richtet sich nach den Bestimmungen von Google und den Einstellungen des Geräts.</p>
 <p>Da bei uns kein Konto besteht und keine Nutzerdaten bei uns gespeichert werden, gibt es auf unserer Seite nichts zu löschen. Die Löschung von Daten bei den gewählten Diensten richtet sich nach deren Bestimmungen.</p>
 
 <h2>A.7 Datensicherheit</h2>
-<p>Die Übertragung an alle Dienste erfolgt ausschliesslich verschlüsselt (TLS/HTTPS). Zugangsdaten werden auf dem Gerät im Android Keystore mit AES-GCM verschlüsselt abgelegt.</p>
+<p>Die Übertragung an alle Dienste erfolgt ausschliesslich verschlüsselt (TLS/HTTPS). API-Schlüssel und kDrive-Tokens werden auf dem Gerät im Android Keystore mit AES-GCM verschlüsselt abgelegt. Die Anmeldung bei Microsoft verwaltet die Microsoft-Bibliothek MSAL in einem eigenen, über den Android Keystore geschützten Speicher. Keiner dieser Zugänge ist Teil der Gerätesicherung.</p>
 
 <h2>A.8 Kinder</h2>
 <p>Die App richtet sich an Erwachsene im beruflichen Umfeld und ist nicht für Kinder bestimmt. Wir erheben wissentlich keine Daten von Kindern.</p>
 
 <h2>A.9 Ihre Rechte und Kontakt</h2>
-<p>Ihre Rechte als betroffene Person sind in <a href="#rechte">Ziffer 12</a> beschrieben. Da die G + H universal GmbH im Zusammenhang mit der App keine Personendaten der Nutzerinnen und Nutzer erhebt oder speichert, richten sich Auskunfts-, Berichtigungs- und Löschungsansprüche bezüglich der Inhalte an die jeweils gewählten Dienste (Microsoft sowie der konfigurierte Transkriptions- bzw. KI-Anbieter). Fragen zur App selbst richten Sie bitte an <a href="mailto:info@gh-universal.ch">info@gh-universal.ch</a>.</p>
+<p>Ihre Rechte als betroffene Person sind in <a href="#rechte">Ziffer 12</a> beschrieben. Da die G + H universal GmbH im Zusammenhang mit der App keine Personendaten der Nutzerinnen und Nutzer erhebt oder speichert, richten sich Auskunfts-, Berichtigungs- und Löschungsansprüche bezüglich der Inhalte an die jeweils gewählten Dienste (der Speicheranbieter, also Microsoft oder Infomaniak, sowie der konfigurierte Transkriptions- bzw. KI-Anbieter). Fragen zur App selbst richten Sie bitte an <a href="mailto:info@gh-universal.ch">info@gh-universal.ch</a>.</p>
 
 <h2>A.10 Änderungen</h2>
 <p>Diese Ergänzung kann angepasst werden. Die jeweils aktuelle Fassung ist unter <a href="https://ghuniversaldev.github.io/gh-universal-legal/datenschutz.html">https://ghuniversaldev.github.io/gh-universal-legal/datenschutz.html</a> abrufbar.</p>
@@ -177,7 +184,7 @@ E-Mail: <a href="mailto:info@gh-universal.ch">info@gh-universal.ch</a></p>
       Massgeblich ist diese veröffentlichte Webfassung. Inhaltsgleiche PDF-Kopie:
       <a href="datenschutz_gh-universal.pdf">datenschutz_gh-universal.pdf</a><br>
       Document-ID: <code>01KZR4753P3J5CKCH94TEZXVW7</code> ·
-      Speichertoken: <code>01M02DHD3GD88TVJCRY71YN934</code> · Aktualisiert: 2026-08-15<br>
+      Speichertoken: <code>01M6JS8X5FKGC571YT1TQYHGXS</code> · Aktualisiert: 2026-11-04<br>
       G+H universal GmbH · Duerrenbach 12, 6192 Wiggen (CH) · info@gh-universal.ch
     </footer>
   </div>
